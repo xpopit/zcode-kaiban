@@ -1,8 +1,12 @@
 {
   "name": "zcode-kaiban",
-  "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "concurrently \"bun server.ts\" \"bunx vite\"",
+    "server": "bun server.ts",
+    "web": "bunx vite"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@vitejs/plugin-react": "^6.1.1",
